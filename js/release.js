@@ -2783,7 +2783,7 @@ let Releases = {
         tracks: [
             {
                 number: 1,
-                title: 'Foriegn Spies',
+                title: 'Foreign Spies',
                 trackAudio: 'https://youtu.be/JbUrRLvdQmE?si=kmP46K4nM7Qez0LP',
                 videoAvailable: true,
                 trackVideo: 'https://youtu.be/UHkZ5YzJYvI?si=BomduYVqTnbcGkfR'
@@ -6065,5 +6065,6 @@ function loadReleaseInfo(releaseID) { // this function will load the appropriate
     }
 
 }
+
 
 
