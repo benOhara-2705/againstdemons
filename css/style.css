@@ -899,7 +899,12 @@ button {
 
 /* FOR LARGER SCREENS */
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 755px) {
+
+    body {
+        background-color: red !important;
+    }
+    
     /* HEADER (ALL PAGES) */
 
     header {
@@ -1289,7 +1294,7 @@ button {
     }
 }
 
-@media screen and (max-width: 1286px) and (min-width: 1024px) { /* FOR MEDIUM SCREENS (DISC / SIDE / SOLO SECTIONS) */
+@media screen and (max-width: 1286px) and (min-width: 755px) { /* FOR MEDIUM SCREENS (DISC / SIDE / SOLO SECTIONS) */
     #disc_header {
         font-size: 500%;
     }
@@ -1302,6 +1307,7 @@ button {
         width: 112px;
     }
 }
+
 
 
 
