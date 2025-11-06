@@ -95,7 +95,7 @@ let Releases = {
             {
                 number: 6,
                 title: 'Anyone Can Play Guitar',
-                trackAudio: 'https://youtu.be/2jsPEOiMNaA?si=EWEN30jLc0Ulc70u',
+                trackAudio: 'https://youtu.be/i_GZJLH0ynY?si=VUwRZGDaXItcEwBm',
                 videoAvailable: false,
                 trackVideo: ''
             },
@@ -202,7 +202,7 @@ let Releases = {
             {
                 number: 1,
                 title: 'Anyone Can Play Guitar',
-                trackAudio: 'https://youtu.be/2jsPEOiMNaA?si=EWEN30jLc0Ulc70u',
+                trackAudio: 'https://youtu.be/i_GZJLH0ynY?si=VUwRZGDaXItcEwBm',
                 videoAvailable: false,
                 trackVideo: ''
             },
@@ -6065,3 +6065,4 @@ function loadReleaseInfo(releaseID) { // this function will load the appropriate
     }
 
 }
+
