@@ -12,6 +12,7 @@ body {
     font-style: normal;
     text-align: center;
     text-decoration: none;
+    background-color: red !important; /* TEST */
 }
 
 header {
@@ -900,11 +901,6 @@ button {
 /* FOR LARGER SCREENS */
 
 @media screen and (min-width: 755px) {
-
-    body {
-        background-color: red !important;
-    }
-    
     /* HEADER (ALL PAGES) */
 
     header {
@@ -1307,6 +1303,7 @@ button {
         width: 112px;
     }
 }
+
 
 
 
