@@ -786,6 +786,11 @@ button {
     margin-bottom: 20px;
 }
 
+#artist_image img {
+    width: 80%;
+    align-self: center;
+}
+
 #artist_details {
     width: 80%;
     justify-self: center;
@@ -801,6 +806,7 @@ button {
     margin: 0px;
     color: black;
     height: auto;
+    padding: 10px;
 }
 
 #side_solo_header_box {
@@ -1227,6 +1233,7 @@ button {
 
     #release_details_box {
         display: flex;
+        align-self: center;
         flex-direction: row;
         width: 90%;
         margin: 40px auto;
@@ -1296,3 +1303,4 @@ button {
         width: 112px;
     }
 }
+
