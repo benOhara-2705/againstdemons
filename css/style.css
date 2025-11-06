@@ -548,7 +548,9 @@ button {
 }
 
 #release_details_box {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 20px;
 }
 
@@ -673,6 +675,13 @@ button {
     align-items: flex-end;
     justify-content: space-between;
     justify-self: center;
+}
+
+#non_track_listing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 #release_track_list_container {
@@ -1302,3 +1311,4 @@ button {
         width: 112px;
     }
 }
+
