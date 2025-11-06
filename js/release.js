@@ -231,7 +231,7 @@ let Releases = {
         previousReleaseID: "R4", 
         previousReleaseTitle: "Anyone Can Play Guitar Single",
         nextReleaseID: "R6", 
-        nextReleaseTitle: "The Bends",
+        nextReleaseTitle: "High and Dry / Planet Telex Single",
         releaseSection: "tb",
         releaseSectionText: "tb_text",
         tracks: [
@@ -6065,6 +6065,7 @@ function loadReleaseInfo(releaseID) { // this function will load the appropriate
     }
 
 }
+
 
 
 
