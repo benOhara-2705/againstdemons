@@ -12,7 +12,6 @@ body {
     font-style: normal;
     text-align: center;
     text-decoration: none;
-    background-color: red !important; /* TEST */
 }
 
 header {
@@ -1303,8 +1302,3 @@ button {
         width: 112px;
     }
 }
-
-
-
-
-
