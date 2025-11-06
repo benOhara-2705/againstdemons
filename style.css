@@ -1,0 +1,1298 @@
+/* ALL OF THE FOLLOWING APPLIES TO THE MOBILE INTERFACE */
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    text-decoration: none;
+}
+
+header {
+    margin: 0;
+    padding: 0 1rem;
+    display: flex;
+    position: sticky;
+    top: 0;
+    height: auto;
+    max-width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: black;
+    font-family: "Inter", sans-serif;
+    border-bottom: 10px solid black;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: white;
+    color: black;
+    font-family: "Inter", sans-serif;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+h3 {
+    margin: 10px 0px 50px 0px;
+    font-size: large;
+}
+
+.logo {
+    height: 60px;
+}
+
+a:not(#logo_text_link, footer a, .nav_dropdown_page, #nav_pages_container, .header_page, #header_side_dropdown_text, #header_solo_dropdown_text, .header_dropdown_page, .cover_art_a, .detail_links, .solo_nav_links) {
+    text-decoration: underline;
+    color: white;
+}
+
+
+/* HEADER (ALL PAGES) */
+
+
+header h5 {
+    margin: 0;
+    padding: 0;
+}
+
+#header_logo {
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
+#header_large_container {
+    display: none;
+}
+
+#logo_text_link {
+    text-decoration: none;
+    color: black;
+}
+
+#header_large_logo {
+    display: none;
+}
+
+.hamburger_icon {
+    font-weight: 500;
+    font-size: 50px;
+}
+
+.logo_text {
+    font-size: large;
+    text-align: left;
+    cursor: pointer;
+}
+
+/* For this div, 'position: absolute' takes it out of the normal flow of the other two divs in the header*/
+#header_logo_div {
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#header_icon_div {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#header_text_div {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#header_pages {
+    display: none;
+}
+
+/* MENU BAR (MOBILE, ALL PAGES) */
+
+#nav_menu {
+    display: none;
+    background-color: black;
+    color: white;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    overflow-y: scroll;
+}
+
+.nav_top_icons {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+#nav_logo {
+    margin: 5px 0px 0px 15px;
+}
+
+.nav_page,
+#nav_solo_dropdown,
+#nav_side_dropdown {
+    width: 100%;
+    padding: 0;
+    margin: 20px 0px;
+}
+
+#nav_pages_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav_side_dropdown_content,
+#nav_solo_dropdown_content {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.nav_dropdown_page {
+    width: 100%;
+    color: black;
+    padding: 0;
+    margin: 20px 0px;
+}
+
+#nav_exit_button {
+    margin: 0;
+    padding: 0px 20px 0px 0px;
+    font-weight: 500;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+
+/* MAIN */
+
+
+/* FRONT CONTENT (INDEX) */
+
+button {
+    width: 100%;
+    height: 40px;
+    margin: 20px 0px;
+    border: 3px solid white;
+    font-size: large;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#front_section {
+    display: flex;
+    flex-direction: column;
+}
+
+#about_button {
+    background-color: white;
+    color: black;
+}
+
+#solo_button {
+    background-color: black;
+    color: white;
+}
+
+#disc_button {
+    background-color: white;
+    color: black;
+}
+
+#side_button {
+    background-color: black;
+    color: white;
+}
+
+#top_buttons {
+    width: 80%;
+    align-self: center;
+}
+
+#front_text_box {
+    width: 80%;
+    justify-items: center;
+    align-items: center;
+    align-self: center;
+}
+
+#front_text {
+    font-size: xx-large;
+    text-align: left;
+    margin: 20px 0px 0px 0px;
+    color: white;
+}
+
+/* MEMBERS SECTION (INDEX) */
+
+#member_section {
+    width: auto;
+    height: auto;
+}
+
+#member_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    margin: auto;
+}
+
+.member_image {
+    height: 200px;
+    width: auto;
+    border: 2px solid white;
+}
+
+.member {
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+
+/* SIDE PROJECTS SECTION (INDEX) */
+
+#side_projects_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    margin: auto;
+}
+
+.side_project {
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.side_projects_image {
+    width: 300px;
+    height: auto;
+    border: 2px solid white;
+}
+
+/* MAIN CONTENT (ABOUT PAGE) */
+
+#about_header_box,
+#credits_header_box {
+    background-color: white;
+    padding: 20px 0;
+    margin: 20px 20px 0px 20px;
+    width: auto;
+}
+
+#about_header_text,
+#credits_header_text {
+    color: black;
+    margin: 0;
+    font-size: 300%;
+    text-align: center;
+}
+
+#about_text,
+#credits_text {
+    margin: 20px;
+    text-align: left;
+    font-size: 20px;
+}
+
+/* FRONT SECTION (DISC (AND PARTLY SIDE / SOLO)) */
+
+#arrow_button {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    z-index: 99; /* This ensures it doesn't overlap with anything */
+    transform: translate(-50%, 0%);
+    height: 50px;
+    opacity: 0.7;
+}
+
+#disc_header,
+#artist_header {
+    background-color: white;
+    padding: 20px 0;
+    height: auto;
+    color: black;
+    margin: 0;
+    font-size: 200%;
+    text-align: center;
+    justify-self: center;
+    margin: 0px auto; 
+}
+
+.filter_button,
+.solo_side_filter_button,
+.section_button {
+    border-radius: 50px;
+    width: auto;
+    height: auto;
+    padding: 0px 8px;
+    margin: 8px;
+}
+
+#section_buttons_container {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+
+.disc_section,
+.section_items_container,
+#filter_buttons_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+}
+
+#disc_sections_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section_header_box,
+#disc_header,
+#artist_header {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.section_header_title,
+.section_header_year {
+    font-size: 25px;
+}
+
+.section_header_title {
+    margin-bottom: 5px;
+}
+
+.section_header_year {
+    margin-top: 5px;
+}
+
+.section_items_container {
+    padding: 20px 0px;
+}
+
+#filter_buttons_container {
+    margin-top: 20px;
+}
+
+.filter_button,
+.solo_side_filter_button {
+    background-color: white;
+    color: black;
+}
+
+.major_cover_art {
+    width: 80%;
+    margin-bottom: 2px;
+    border: 1px solid white;
+}
+
+.minor_cover_art {
+    width: 145px;
+    border: 1px solid white;
+}
+
+.minor_cover_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    flex-direction: row;
+    width: 80%;
+    flex-wrap: wrap;
+    row-gap: 2px;
+    column-gap: 6px;
+}
+
+.cover_art_a {
+    text-decoration: none;
+    width: auto;
+}
+
+/* BUTTON & HEADER COLOURS (DISC) */
+
+.ph,
+#ph_header {
+    background-color: #fbb602ff;
+    border-color: #fbb602ff !important;
+    color: black;
+}
+
+.tb,
+#tb_header {
+    background-color: white;
+    border-color: white !important;
+    color: #d32524ff !important;
+}
+
+.ok,
+#ok_header {
+    background-color: #0375beff;
+    border-color: #0375beff !important;
+    color: white !important;
+}
+
+.kida,
+#kida_header {
+    background-color: #d32524ff;
+    border-color: #d32524ff !important;
+    color: white;
+}
+
+.am,
+#am_header {
+    background-color: #d32524ff;
+    border-color: #d32524ff !important;
+    color: black;
+}
+
+.httt,
+#httt_header {
+    background-color: #f1801aff;
+    border-color: #f1801aff !important;
+    color: black;
+}
+
+.ir,
+#ir_header {
+    background-color: #ffed64ff;
+    border-color: #ffed64ff !important;
+    color: black;
+}
+
+.tkol,
+#tkol_header {
+    background-color: #6aa84fff;
+    border-color: #6aa84fff !important;
+    color: black;
+}
+
+.amsp,
+#amsp_header {
+    background-color: #b7b7b7ff;
+    border-color: #b7b7b7ff !important;
+    color: black;
+}
+
+.other_release { /* FOR SOLO / SIDE PROJECTS */
+    background-color: white;
+    border-color: white !important;
+    color: black;
+}
+
+/* RELEASES PAGE (ALL RELEASES) */
+
+#back_button {
+    background-color: white;
+    color: black;
+    width: 80%;
+    height: 100%;
+    border-radius: 20px;
+    margin-bottom: 0px;
+    align-self: center;
+}
+
+#back_button_box {
+    align-self: center;
+    justify-self: center;
+    width: calc(100% - 20px);
+    border-radius: 50%;
+}
+
+#release_details_box {
+    display: block;
+    margin-top: 20px;
+}
+
+#release_details {
+    display: block;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+}
+
+#release_title {
+    margin: 20px 0px;
+    width: 100%;
+    font-size: xx-large;
+}
+
+#release_small_details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+
+#release_box_cover_art {
+    display: flex;
+    justify-self: center;
+    width: 80%;
+    border: 1px solid white;
+}
+
+#release_artist,
+#release_type_and_year {
+    display: block;
+    margin: 0;
+    align-content: center;
+}
+
+#break_line,
+#track_break_line {
+    margin: 8px 0px;
+    align-self: center;
+    width: 80%;
+    display: flex;
+    justify-self: center;
+}
+
+#release_navigation {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: start;
+    justify-self: center;
+}
+
+#previous_release,
+#current_release,
+#next_release {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#next_release {
+    display: block;
+}
+
+#previous_release_text,
+#next_release_text {
+    display: block;
+    margin: 0;
+}
+
+#previous_release_icon,
+#next_release_icon {
+    display: inline-block;
+    width: 50px;
+}
+
+#current_release_icon {
+    display: flex;
+    justify-self: center;
+    width: 80px;
+}
+
+#release_navigation_buttons {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    gap: 8px;
+}
+
+#previous_release_button,
+#next_release_button {
+    margin: 10px 0px 0px 0px;
+    font-size: 30px;
+    text-align: center;
+}
+
+#previous_release_text,
+#next_release_text {
+    width: 50%;
+}
+
+#previous_release_text {
+    text-decoration: underline;
+    text-align: left;
+}
+
+#next_release_text {
+    text-decoration: underline;
+    text-align: right;
+}
+
+#release_navigation_button_links {
+    display: flex;
+    width: 80%;
+    align-items: flex-end;
+    justify-content: space-between;
+    justify-self: center;
+}
+
+#release_track_list_container {
+    display: flex;
+    padding: 0;
+    margin-bottom: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    justify-self: center;
+}
+
+.release_track_list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.release_track {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    justify-content: space-between;
+    justify-self: center;
+    border: 1px solid black !important;
+}
+
+.release_track_title {
+    margin: 10px 5px;
+    width: 50%;
+    font-size: 5vw;
+    align-self: center;
+    text-align: left;
+}
+
+.track_listing_caption {
+    margin: 10px 0px;
+}
+
+.release_track_buttons {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-self: center;
+    align-items: center;
+    align-self: center;
+}
+
+.release_track_details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.track_audio_button,
+.track_video_button {
+    width: 50px;
+    padding: 6px;
+}
+
+.track_video_div {
+    background-color: black;
+    height: auto;
+    width: auto;
+    border: 5px solid white;
+    padding: 1px 5px;
+}
+
+/* RELEASES COLOURS */
+
+.ph_text {
+    color: #fbb602ff;
+}
+
+.tb_text,
+.kida_text,
+.am_text {
+    color: #ff3635;
+}
+
+.ok_text {
+    color: #87d0ff;
+}
+
+.httt_text {
+    color: #f1801aff;
+}
+
+.ir_text {
+    color: #ffed64ff;
+}
+
+.tkol_text {
+    color: #6aa84fff;
+}
+
+.amsp_text {
+    color: #b7b7b7ff;
+}
+
+.other_release_text { /* FOR SOLO / SIDE PROJECTS*/
+    color: white;
+}
+
+/* SIDE PROJECTS / SOLO PAGES */
+
+#artist_header {
+    margin-bottom: 20px;
+}
+
+#artist_details {
+    width: 80%;
+    justify-self: center;
+    align-self: center;
+    background-color: white;
+    color: black;
+    padding: 10px 0px;
+    margin-bottom: 50px
+}
+
+#side_solo_header {
+    font-size: 200%;
+    margin: 0px;
+    color: black;
+    height: auto;
+}
+
+#side_solo_header_box {
+    background-color: white;
+    width: 80%;
+    align-self: center;
+    justify-content: center;
+}
+
+.detail_links {
+    color: black;
+}
+
+.solo_nav_links,
+#selected_artist_button {
+    color: black;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+}
+
+#solo_nav_buttons {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    margin-top: 10px;
+    justify-self: center;
+    align-self: center;
+    width: 80%;
+}
+
+.solo_artist_button {
+    width: 60%;
+}
+
+/* FOOTER (ALL PAGES) */
+
+
+#footer_logo {
+    height: 100px;
+}
+
+#footer_logo_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer_pages_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer_page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    width: 100%;
+    padding: 0;
+    margin: 10px 0px;
+    font-size: smaller;
+}
+
+.footer_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer_page_bold {
+    color: black;
+    width: 100%;
+    padding: 0;
+    margin: 20px 0px;
+
+    font-weight: bolder;
+    font-size: large;
+}
+
+#info_footer {
+    background-color: black;
+    color: white;
+    width: auto;
+}
+
+/* FOR LARGER SCREENS */
+
+@media screen and (min-width: 755px) {
+    /* HEADER (ALL PAGES) */
+
+    header {
+        flex-direction: row;
+        overflow: visible;
+    }
+
+    #header_icon_div,
+    #header_logo_div,
+    #header_text_div {
+        display: none;
+    }
+
+    #header_large_container {
+        display: flex;
+        width: auto;
+        height: 100%;
+        text-align: center;
+    }
+
+    #header_large_logo {
+        display: flex;
+        justify-content: left;
+        margin: 10px 0px;
+    }
+
+    .header_page,
+    #header_solo_dropdown,
+    #header_side_dropdown {
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+        cursor: pointer;
+        color: black;
+        text-decoration: none;
+        user-select: none;
+    }
+
+    .header_page,
+    #header_side_dropdown_text,
+    #header_solo_dropdown_text {
+        text-decoration: none;
+        position: relative;
+        user-select: none;
+        color: black;
+        padding: 0;
+    }
+
+    /* Whenever any dropdown menu is hovered over, the dropdown content will be displayed */
+    #header_solo_dropdown:hover > #header_solo_dropdown_content,
+    #header_solo_dropdown:focus-within > #header_solo_dropdown_content,
+    #header_side_dropdown:hover > #header_side_dropdown_content,
+    #header_side_dropdown:focus-within > #header_side_dropdown_content {
+        display: flex;
+    }
+
+    #header_solo_dropdown::after {
+        content: "SOLO RELEASES ▼";
+    }
+
+    #header_solo_dropdown:hover::after {
+        content: "SOLO RELEASES ▲";
+    }
+
+    #header_side_dropdown::after {
+        content: "SIDE PROJECTS ▼";
+    }
+
+    #header_side_dropdown:hover::after {
+        content: "SIDE PROJECTS ▲";
+    }
+
+    #header_side_dropdown_content,
+    #header_solo_dropdown_content {
+        display: none;
+        position: absolute;
+        top: 100%; /* Right below the dropdown option in the header */
+        left: 0;
+        flex-direction: column;
+        background-color: white;
+        padding: 8px 0px;
+        min-width: 160px;
+        z-index: 1000;
+    }
+
+    .header_dropdown_page {
+        color: black;
+        width: auto;
+        padding: 6px 16px;
+        text-align: left;
+        text-decoration: none;
+        white-space: nowrap;
+    }
+
+    .header_dropdown_page:hover {
+        background-color: black;
+        color: white;
+    }
+
+    /* FRONT SECTION (INDEX) */
+
+    button {
+        height: 50px;
+        width: 100%;
+        margin: 0px 10px;
+    }
+
+    #side_button {
+        margin: 0px 0px 0px 10px
+    }
+
+    #about_button {
+        margin: 0px 10px 0px 0px;
+    }
+
+    #front_section {
+        margin: 200px 0px 0px 0px;
+        width: 80%;
+        align-self: center;
+        justify-self: center;
+    }
+
+    #front_text_box {
+        background-color: white;
+        padding: 20px 0px;
+        width: 100%;
+    }
+
+    #front_text {
+        color: black;
+        margin: 0;
+        font-size: 300%;
+        text-align: center;
+    }
+
+    #top_buttons {
+        display: flex;
+        width: 100%;
+        margin: 20px 0px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 200px;
+    }
+
+    /* MEMBERS SECTION (INDEX) */
+
+    #members_section {
+        height: fit-content;
+        margin-bottom: 200px;
+    }
+
+    #member_container {
+        flex-direction: row;
+        height: 100%;
+        max-width: 100%;
+        width: 80%;
+    }
+
+    .member {
+        margin: 0;
+        padding: 0;
+    }
+
+    .member_image {
+        width: 80%;
+        height: 80%;
+    }
+
+    /* SIDE PROJECTS SECTION (INDEX) */
+
+    #side_projects_container {
+        flex-direction: row;
+        width: 80%;
+        margin-bottom: 200px;
+    }
+
+    .side_projects_image {
+        width: 80%;
+    }
+
+    /* FRONT SECTION (DISC (AND PARTLY SIDE / SOLO)) */
+
+    .disc_section {
+        width: 100%;
+    }
+
+    #disc_header{
+        background-color: black;
+        color: white;
+        font-size: 600%;
+        padding: 0;
+        margin-top: 100px;
+    }
+
+    #filter_buttons_container {
+        margin-top: 0;
+        flex-direction: row;
+        width: 60%;
+        justify-content: space-evenly;
+    }
+
+    #section_buttons_container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 600px;
+        align-self: center;
+        margin: 20px 0px;
+    }
+
+    .section_header_box {
+        width: 100%;
+    }
+
+    .section_items_container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        width: 80%;
+    }
+
+    .section_items_container > .cover_art_a {
+        max-width: 100%;
+        margin-right: 6px;
+    }
+
+    .section_item {
+        width: auto;
+        height: auto;
+    }
+
+    .minor_cover_container {
+        padding-left: 6px;
+        flex-direction: row;
+        max-width: none;
+        width: auto;
+        height: auto;
+        justify-content: flex-start;
+    }
+
+    .minor_cover_art {
+        width: 196px;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    .major_cover_art {
+        width: 400px;
+    }
+
+    /* SIDE / SOLO PAGES */
+
+    #artist_header {
+        background-color: black;
+        color: white;
+        font-size: 600%;
+        padding: 0;
+        margin-top: 100px;
+    }
+
+    #artist_image {
+        flex: 1;
+        max-width: 400px;
+    }
+
+    #artist_image img {
+        width: 100%;
+        height: auto;
+        border: 1px solid white;
+    }
+
+    #artist_details {
+        flex: 1.5;
+        width: auto;
+        margin: 0;
+        height: fit-content;
+        background-color: white;
+        color: black;
+        padding: 2rem;
+        text-align: left;
+        align-self: flex-start;
+        font-size: 120%;
+    }
+
+    #artist_details_container {
+        display: flex;
+        flex-direction: row;
+        margin: 40px auto;
+        gap: 2.5rem;
+        width: 80%;
+        align-items: center;
+        align-self: center;
+    }
+
+    .side_details {
+        margin-left: 100px !important;
+    }
+
+    #side_solo_header {
+        color: black;
+        font-size: 300%;
+        margin: 0;
+        padding: 10px;
+    }
+
+    #solo_nav_buttons {
+    align-self: auto;
+    }
+
+    .solo_side_filter_button {
+        margin-top: 20px;
+    }
+
+    /* RELEASES PAGE (ALL RELEASES) */
+
+    #back_button {
+        width: 48%;
+        margin: 0;
+        align-self: flex-start;
+    }
+
+    #back_button_box {
+        display: flex;
+        justify-content: start;
+        margin-top: 20px;
+        width: 90%;
+    }
+
+    #release_details_box {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        margin: 40px auto;
+        gap: 2.5rem;
+    }
+
+    .release_track_title {
+        font-size: 100%;
+    }
+
+    #track_listing_header {
+        align-self: start;
+        margin-top: 0;
+    }
+
+    #track_listing_caption {
+        align-self: start;
+        margin-bottom: 5%;
+        text-align: left;
+    }
+
+    #release_track_list_container {
+        flex: 1;
+        min-width: 0;
+        width: 100%;
+        justify-self: start;
+        align-self: flex-start;
+    }
+
+    #non_track_listing {
+        flex: 1;
+        min-width: 0;
+        width: 100%;
+        border: 4px solid white;
+        padding: 5% 0;
+    }
+
+    #track_break_line {
+        display: none;
+    }
+
+    /* FOOTER SECTION (ALL PAGES) */
+
+    #footer_pages_container {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .footer_section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1286px) and (min-width: 755px) { /* FOR MEDIUM SCREENS (DISC / SIDE / SOLO SECTIONS) */
+    #disc_header {
+        font-size: 500%;
+    }
+
+    .major_cover_art {
+        width: 350px;
+    }
+
+    .minor_cover_art {
+        width: 112px;
+    }
+}
