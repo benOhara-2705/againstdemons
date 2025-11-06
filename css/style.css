@@ -798,6 +798,7 @@ button {
 #artist_image img {
     width: 80%;
     align-self: center;
+    border: 1px solid white;
 }
 
 #artist_details {
@@ -1180,7 +1181,6 @@ button {
     #artist_image img {
         width: 100%;
         height: auto;
-        border: 1px solid white;
     }
 
     #artist_details {
@@ -1311,4 +1311,5 @@ button {
         width: 112px;
     }
 }
+
 
