@@ -4978,7 +4978,7 @@ let Releases = {
         tracks: [
             {
                 number: 1,
-                title: "Djit Nishrab (feat. Ahmed Doma",
+                title: "Djit Nishrab (feat. Ahmed Doma)",
                 trackAudio: 'https://youtu.be/bhCXPPFVV5o?si=_iY2tnGclrNt8kTn',
                 videoAvailable: false,
                 trackVideo: ''
@@ -6065,6 +6065,7 @@ function loadReleaseInfo(releaseID) { // this function will load the appropriate
     }
 
 }
+
 
 
 
