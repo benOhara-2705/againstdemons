@@ -1000,7 +1000,7 @@ let Releases = {
         previousReleaseID: "R17", 
         previousReleaseTitle: "Amnesiac",
         nextReleaseID: "R19", 
-        nextReleaseTitle: "I Might Be Wrong: Live Recording",
+        nextReleaseTitle: "I Might Be Wrong: Live Recordings",
         releaseSection: "am",
         releaseSectionText: "am_text",
         tracks: [
@@ -6065,6 +6065,7 @@ function loadReleaseInfo(releaseID) { // this function will load the appropriate
     }
 
 }
+
 
 
 
