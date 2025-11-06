@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discography | Against Demons</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/disc.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+
+        <div id="header_text_div">
+            <a id="logo_text_link" href="index.html">
+                <h5 class="logo_text">AGAINST<br>DEMONS</h5>
+            </a>
+        </div>
+
+        <div id="header_logo_div">
+            <a href="index.html">
+                <img class="logo" id="header_logo" src="images/ADLogo.png" alt="Logo (header)">
+            </a>
+        </div>
+
+        <div tabindex="0" role="button" id="header_icon_div" onclick="openNav()"
+            onkeydown="if(event.key==='Enter' || event.key===' ') openNav()">
+            <h5 class="hamburger_icon">≡</h5>
+        </div>
+
+        <div id="header_large_logo">
+            <a href="index.html">
+                <img class="logo" src="images/ADLogoLarge.png" alt="Logo (header)">
+            </a>
+        </div>
+
+        <div id="header_large_container">
+            <a class="header_page" href="about.html">ABOUT</a>
+            <div id="header_solo_dropdown" tabindex="0">
+                <p id="header_solo_dropdown_text" href="#"></p>
+                <div id="header_solo_dropdown_content">
+                    <a class="header_dropdown_page" href="thom.html">THOM YORKE</a>
+                    <a class="header_dropdown_page" href="jonny.html">JONNY GREENWOOD</a>
+                    <a class="header_dropdown_page" href="colin.html">COLIN GREENWOOD</a>
+                    <a class="header_dropdown_page" href="ed.html">ED O'BRIEN</a>
+                    <a class="header_dropdown_page" href="philip.html">PHILIP SELWAY</a>
+                </div>
+            </div>
+            <div id="header_side_dropdown" tabindex="0">
+                <p id="header_side_dropdown_text" href="#"></p>
+                <div id="header_side_dropdown_content">
+                    <a class="header_dropdown_page" href="atomsforpeace.html">ATOMS FOR PEACE</a>
+                    <a class="header_dropdown_page" href="thesmile.html">THE SMILE</a>
+                </div>
+            </div>
+            <a class="header_page" href="disc.html">DISCOGRAPHY</a>
+        </div>
+
+    </header>
+
+    <div id="nav_menu">
+
+        <div class="nav_top_icons">
+            <a href="index.html">
+                <img class="logo" id="nav_logo" src="images/ADLogo.png" alt="Logo (Nav)">
+            </a>
+            <p id="nav_exit_button" tabindex="0" role="button" onclick="closeNav()"
+                onkeydown="if(event.key==='Enter' || event.key===' ') closeNav()">×</p>
+        </div>
+
+        <div id="nav_pages_container">
+            <a class="nav_page" href="about.html">ABOUT</a>
+            <a id="nav_solo_dropdown" onclick="expandSolo()" href="#">SOLO RELEASES ►</a>
+            <div id="nav_solo_dropdown_content">
+                <a class="nav_dropdown_page" href="thom.html">THOM YORKE</a>
+                <a class="nav_dropdown_page" href="jonny.html">JONNY GREENWOOD</a>
+                <a class="nav_dropdown_page" href="colin.html">COLIN GREENWOOD</a>
+                <a class="nav_dropdown_page" href="ed.html">ED O'BRIEN</a>
+                <a class="nav_dropdown_page" href="philip.html">PHILIP SELWAY</a>
+            </div>
+            <a id="nav_side_dropdown" onclick="expandSide()" href="#">SIDE PROJECTS ►</a>
+            <div id="nav_side_dropdown_content">
+                <a class="nav_dropdown_page" href="atomsforpeace.html">ATOMS FOR PEACE</a>
+                <a class="nav_dropdown_page" href="thesmile.html">THE SMILE</a>
+            </div>
+            <a class="nav_page" href="disc.html">DISCOGRAPHY</a>
+        </div>
+
+    </div>
+
+    <main>
+
+        <input id="arrow_button" type="image" src="images/ArrowButton.png" onclick="scrollToTop()" />
+
+        <section id="disc_header_box">
+            <h1 id="disc_header">DISCOGRAPHY</h1>
+        </section>
+
+        <div id="filter_buttons_container">
+            <button class="filter_button" id="date_filter_button" onclick="changeReleaseOrder()">NEWEST FIRST ▼</button>
+            <button class="filter_button" id="section_reveal_button" onclick="revealSectionButtons()">SKIP TO ►</button>
+        </div>
+
+        <div id="section_buttons_container">
+            <button class="section_button ph" onclick="scrollPH()">PABLO HONEY</button>
+            <button class="section_button tb" onclick="scrollTB()">THE BENDS</button>
+            <button class="section_button ok" onclick="scrollOK()">OK COMPUTER</button>
+            <button class="section_button kida" onclick="scrollKIDA()">KID A</button>
+            <button class="section_button am" onclick="scrollAM()">AMNESIAC</button>
+            <button class="section_button httt" onclick="scrollHTTT()">HAIL TO THE THIEF</button>
+            <button class="section_button ir" onclick="scrollIR()">IN RAINBOWS</button>
+            <button class="section_button tkol" onclick="scrollTKOL()">THE KING OF LIMBS</button>
+            <button class="section_button amsp" onclick="scrollAMSP()">A MOON SHAPED POOL</button>
+        </div>
+
+        <section id="disc_sections_container">
+
+            <section class="disc_section">
+                <div class="section_header_box" id="amsp_header">
+                    <h1 class="section_header_title">A MOON SHAPED POOL</h1>
+                    <h1 class="section_header_year">2015 - 2019</h1>
+                </div>
+                <div class="section_items_container">
+                    <div class="section_item">
+                        <a class="cover_art_a" href="release.html" release_id="R33">
+                            <img src="https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/b7/f2/5d/b7f25d91-4320-47c8-146a-6f84d5bc7e78/cover.jpg/600x600bb.jpg"
+                                class="major_cover_art" alt="A Moon Shaped Pool">
+                        </a>
+                    </div>
+                    <div class="minor_cover_container">
+                        <div class="section_item">
+                            <a class="cover_art_a" href="release.html" release_id="R32">
+                                <img src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/cf/88/57/cf885754-e21a-97bf-6931-f1fcd918c5d0/634904081867.png/600x600bb.jpg"
+                                    class="minor_cover_art" alt="Spectre">
+                            </a>
+                        </div>
+                        <div class="section_item">
+                            <a class="cover_art_a" href="release.html" release_id="R34">
+                                <img src="https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/6c/a1/45/6ca1451a-2313-65ab-45c1-781733108717/191404098059.png/600x600bb.jpg"
+                                    class="minor_cover_art" alt="Ill Wind">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="disc_section">
+                <div class="section_header_box" id="tkol_header">
+                    <h1 class="section_header_title">THE KING OF LIMBS</h1>
+                    <h1 class="section_header_year">2009 - 2011</h1>
+                </div>
+                <div class="section_items_container">
+                    <div class="section_item">
+                        <a class="cover_art_a" href="release.html" release_id="R27">
+                            <img src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/af/b6/7b/afb67b4e-6cf8-10b3-31f1-1389e301166d/634904078768.png/600x600bb.jpg"
+                                class="major_cover_art" alt="The King of Limbs">
+                        </a>
+                    </div>
+                    <div class="minor_cover_container">
+                        <div class="section_item">
+                            <a class="cover_art_a" href="release.html" release_id="R25">
+                                <img src="https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/60/b6/96/60b696e8-e47f-e4ea-b967-6f01b94bb484/634904084165.png/600x600bb.jpg"
+                                    class="minor_cover_art" alt="Harry Patch (In Memory Of)">
+                            </a>
+                        </div>
+                        <div class="section_item">
+                            <a class="cover_art_a" href="release.html" release_id="R26">
+                                <img src="https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/a7/a0/42/a7a04238-6e92-3a32-f4d2-63a4d4352078/634904084066.png/600x600bb.jpg"
+                                    class="minor_cover_art" alt="These Are My Twisted Words">
+                            </a>
+                        </div>
+                        <div class="section_item">
+                            <a class="cover_art_a" href="release.html" release_id="R28">
+                                <img src="https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/bb/41/2a/bb412a24-e35c-3b33-f0b3-4574b7fbef23/634904084264.png/600x600bb.jpg"
+                                    class="minor_cover_art" alt="Supercolider / The Butcher">
+                            </a>
+                        </div>
+                        <div class="section_item">
+                            <a class="cover_art_a" href="release.html" release_id="R29">
+                                <img src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/e4/6b/f2/e46bf28e-6e75-ca39-69ce-4d02ad1366e5/634904080969.png/600x600bb.jpg"
+                                    class="minor_cover_art" alt="TKOL RMX 1234567">
+                            </a>
+                        </div>
+                        <div class="section_item">
+                            <a class="cover_art_a" href="release.html" release_id="R30">
+                                <img src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/b2/d7/4d/b2d74d35-8392-02cc-8480-c799aad12e91/191404102756.png/600x600bb.jpg"
+                                    class="minor_cover_art" alt="TKOL RMX 8">
+                            </a>
+                        </div>
+                        <div class="section_item">
+                            <a class="cover_art_a" href="release.html" release_id="R31">
+                                <img src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/6b/e6/2c/6be62c8b-12bf-d3d2-bb43-bfde45a67c08/634904081065.png/600x600bb.jpg"
+                                    class="minor_cover_art" alt="The Daily Mail / Staircase">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="disc_section">
+                <div class="section_header_box" id="ir_header">
+                    <h1 class="section_header_title">IN RAINBOWS</h1>
+                    <h1 class="section_header_year">2005 - 2007</h1>
+                </div>
+                <div class="section_items_container">
+                    <div class="section_item">
+                        <a class="cover_art_a" href="release.html" release_id="R23">
+                            <img src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/dd/50/c7/dd50c790-99ac-d3d0-5ab8-e3891fb8fd52/634904032463.png/600x600bb.jpg"
+                                class="major_cover_art" alt="In Rainbows">
+                        </a>
+                    </div>
+                    <div class="minor_cover_container">
+                        <div class="section_item">
+                            <a class="cover_art_a" href="release.html" release_id="R22">
+                                <img src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/44/3c/e6/443ce62f-7a42-f219-f7d3-407be718f3aa/191404101766.png/600x600bb.jpg"
+                                    class="minor_cover_art" alt="I Want None of This">
+                            </a>
+                        </div>
+                        <div class="section_item">
+                            <a class="cover_art_a" href="release.html" release_id="R24">
+                                <img src="https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/13/39/3c/13393c12-a1cf-445f-5dd0-07988cbe540d/634904032449.png/600x600bb.jpg"
+                                    class="minor_cover_art" alt="In Rainbows Disc 2">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="disc_section">
+                <div class="section_header_box" id="httt_header">
+                    <h1 class="section_header_title">HAIL TO THE THIEF</h1>
+                    <h1 class="section_header_year">2003 - 2004 / 2025</h1>
+                </div>
+                <div class="section_items_container">
+                    <div class="section_item">
+                        <a class="cover_art_a" href="release.html" release_id="R20">
+                            <img src="https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/3c/95/1d/3c951d73-f6c6-12dd-34b4-cc95f63e210c/634904078560.png/600x600bb.jpg"
+                                class="major_cover_art" alt="Hail to the Thief">
+                        </a>
+                    </div>
+                    <div class="minor_cover_container">
+                        <div class="section_item">
+                            <a class="cover_art_a" href="release.html" release_id="R21">
+                                <img src="https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/77/fd/0a/77fd0a4e-e5b1-8597-12dc-8917ead835bb/634904080853.png/600x600bb.jpg"
+                                    class="minor_cover_art" alt="Com Lag (2plus2isfive) EP">
+                            </a>
+                        </div>
+                        <div class="section_item">
+                            <a class="cover_art_a" href="release.html" release_id="R37">
+                                <img src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/8e/8b/bd/8e8bbda2-4f83-6e06-ce1e-08f7c2ef5e46/191404156377.png/600x600bb.jpg"
+                                    class="minor_cover_art" alt="Hail to the Thief (Live Recordings 2003 - 2009)">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="disc_section">
+                <div class="section_header_box" id="am_header">
+                    <h1 class="section_header_title">AMNESIAC</h1>
+                    <h1 class="section_header_year">2001</h1>
+                </div>
+                <div class="section_items_container">
+                    <div class="section_item">
+                        <a class="cover_art_a" href="release.html" release_id="R17">
+                            <img src="https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/43/d8/ec/43d8ec17-0e96-dba9-21d9-4cdf9d98f2bf/634904078362.png/600x600bb.jpg"
+                                class="major_cover_art" alt="Amnesiac">
+                        </a>
+                    </div>
+                    <div class="minor_cover_container">
+                        <div class="section_item">
+                            <a class="cover_art_a" href="release.html" release_id="R16">
+                                <img src="https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/dd/13/cf/dd13cf4b-c3be-5b22-3f58-eeedd7c864ba/634904080662.png/600x600bb.jpg"
+                                    class="minor_cover_art" alt="Pyramid Song Single">
+                            </a>
+                        </div>
+                        <div class="section_item">
+                            <a class="cover_art_a" href="release.html" release_id="R18">
+                                <img src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/c2/73/9a/c2739a54-e512-90b1-a834-420111a5bb9f/634904080761.png/600x600bb.jpg"
+                                    class="minor_cover_art" alt="Knives Out Single">
+                            </a>
+                        </div>
+                        <div class="section_item">
+                            <a class="cover_art_a" href="release.html" release_id="R19">
+                                <img src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/48/bc/68/48bc6874-b2d7-8c34-4999-cb111f45c6fe/634904078461.png/600x600bb.jpg"
+                                    class="minor_cover_art" alt="I Might Be Wrong: Live Recordings">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="disc_section">
+                <div class="section_header_box" id="kida_header">
+                    <h1 class="section_header_title">KID A</h1>
+                    <h1 class="section_header_year">2000 / 2021</h1>
+                </div>
+                <div class="section_items_container">
+                    <div class="section_item">
+                        <a class="cover_art_a" href="release.html" release_id="R14">
+                            <img src="https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/bd/8e/13/bd8e1358-b367-a689-cb84-cebd0b067dc4/634904078263.png/600x600bb.jpg"
+                                class="major_cover_art" alt="Kid A">
+                        </a>
+                    </div>
+                    <div class="minor_cover_container">
+                        <div class="section_item">
+                            <a class="cover_art_a" href="release.html" release_id="R15">
+                                <img src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/dd/df/ad/dddfadb7-c8e3-636d-4171-e5f546ba300a/191404105757.png/600x600bb.jpg"
+                                    class="minor_cover_art" alt="Treefingers (Extended Version)">
+                            </a>
+                        </div>
+                        <div class="section_item">
+                            <a class="cover_art_a" href="release.html" release_id="R36">
+                                <img src="https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/45/fb/81/45fb8153-21f0-8a66-ba39-4bbd66a12be0/191404116654.png/600x600bb.jpg"
+                                    class="minor_cover_art" alt="Kid A Mnesia">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="disc_section">
+                <div class="section_header_box" id="ok_header">
+                    <h1 class="section_header_title">OK COMPUTER</h1>
+                    <h1 class="section_header_year">1997 - 1998 / 2017</h1>
+                </div>
+                <div class="section_items_container">
+                    <div class="section_item">
+                        <a class="cover_art_a" href="release.html" release_id="R10">
+                            <img src="https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/07/60/ba/0760ba0f-148c-b18f-d0ff-169ee96f3af5/634904078164.png/600x600bb.jpg"
+                                class="major_cover_art" alt="Ok Computer">
+                        </a>
+                    </div>
+                    <div class="minor_cover_container">
+                        <div class="section_item">
+                            <a class="cover_art_a" href="release.html" release_id="R11">
+                                <img src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/81/04/3f/81043f85-c1c7-6bce-6819-90f0a76e8d96/634904080365.png/600x600bb.jpg"
+                                    class="minor_cover_art" alt="Paranoid Android Single">
+                            </a>
+                        </div>
+                        <div class="section_item">
+                            <a class="cover_art_a" href="release.html" release_id="R12">
+                                <img src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/eb/4a/4b/eb4a4bff-c315-3612-e97f-1a47068f59ba/634904080464.png/600x600bb.jpg"
+                                    class="minor_cover_art" alt="Karma Police Single">
+                            </a>
+                        </div>
+                        <div class="section_item">
+                            <a class="cover_art_a" href="release.html" release_id="R13">
+                                <img src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/33/16/c9/3316c9c7-aa51-f101-c06d-502ab58bdd20/634904080563.png/600x600bb.jpg"
+                                    class="minor_cover_art" alt="No Surprises Single">
+                            </a>
+                        </div>
+                        <div class="section_item">
+                            <a class="cover_art_a" href="release.html" release_id="R35">
+                                <img src="https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/9c/f5/04/9cf50453-c311-5324-ffe3-805a811efd73/dj.besjjjpd.jpg/600x600bb.jpg"
+                                    class="minor_cover_art" alt="Ok Computer OKNOTOK 1997 - 2017">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="disc_section">
+                <div class="section_header_box" id="tb_header">
+                    <h1 class="section_header_title">THE BENDS</h1>
+                    <h1 class="section_header_year">1994 - 1996</h1>
+                </div>
+                <div class="section_items_container">
+                    <div class="section_item">
+                        <a class="cover_art_a" href="release.html" release_id="R7">
+                            <img src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/1b/a9/5c/1ba95cac-b245-d386-63fb-6b857aa9dce8/634904078065.png/600x600bb.jpg"
+                                class="major_cover_art" alt="The Bends">
+                        </a>
+                    </div>
+                    <div class="minor_cover_container">
+                        <div class="section_item">
+                            <a class="cover_art_a" href="release.html" release_id="R5">
+                                <img src="https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/74/34/ab/7434abae-88ad-54b0-d077-ca7fd23ab130/634904079864.png/600x600bb.jpg"
+                                    class="minor_cover_art" alt="My Iron Lung EP">
+                            </a>
+                        </div>
+                        <div class="section_item">
+                            <a class="cover_art_a" href="release.html" release_id="R6">
+                                <img src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/de/29/39/de293979-fa6b-aa11-c122-be20fb66be3e/634904080068.png/600x600bb.jpg"
+                                    class="minor_cover_art" alt="High and Dry / Planet Telex Single">
+                            </a>
+                        </div>
+                        <div class="section_item">
+                            <a class="cover_art_a" href="release.html" release_id="R8">
+                                <img src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/52/45/61/5245617a-1bf0-6fe1-c694-8685f4792776/634904079963.png/600x600bb.jpg"
+                                    class="minor_cover_art" alt="Fake Plastic Trees Single">
+                            </a>
+                        </div>
+                        <div class="section_item">
+                            <a class="cover_art_a" href="release.html" release_id="R9">
+                                <img src="https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/73/7f/e5/737fe5fe-ae9d-d997-7b76-467108c782ea/634904080266.png/600x600bb.jpg"
+                                    class="minor_cover_art" alt="Street Spirit (Fade Out) Single">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="disc_section">
+                <div class="section_header_box" id="ph_header">
+                    <h1 class="section_header_title">PABLO HONEY</h1>
+                    <h1 class="section_header_year">1992 - 1993</h1>
+                </div>
+                <div class="section_items_container">
+                    <div class="section_item">
+                        <a class="cover_art_a" href="release.html" release_id="R2">
+                            <img src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/78/a4/ec/78a4ec7b-c6d6-c9c8-441b-660486e56a89/634904077969.png/600x600bb.jpg"
+                                class="major_cover_art" alt="Pablo Honey">
+                        </a>
+                    </div>
+                    <div class="minor_cover_container">
+                        <div class="section_item">
+                            <a class="cover_art_a" href="release.html" release_id="R1">
+                                <img src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/c0/f2/78/c0f27867-9ea8-b0d2-50d5-5c1e0c2f8c8f/634904079567.png/600x600bb.jpg"
+                                    class="minor_cover_art" alt="Drill EP">
+                            </a>
+                        </div>
+                        <div class="section_item">
+                            <a class="cover_art_a" href="release.html" release_id="R3">
+                                <img src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/28/7a/7c/287a7ca9-ed95-1a21-e3bb-4559a1a0ac0e/191404134351.png/600x600bb.jpg"
+                                    class="minor_cover_art" alt="Creep Single">
+                            </a>
+                        </div>
+                        <div class="section_item">
+                            <a class="cover_art_a" href="release.html" release_id="R4">
+                                <img src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/30/02/7d/30027d45-b3bd-6734-f745-b7db8cb0798b/634904079666.png/600x600bb.jpg"
+                                    class="minor_cover_art" alt="Anyone Can Play Guitar Single">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+    </main>
+    <footer>
+
+        <div id="footer_logo_container">
+            <a id="footer_logo_link" href="index.html">
+                <img id="footer_logo" src="images/ADLogo.png" alt="Logo (Footer)">
+            </a>
+        </div>
+
+        <div id="footer_pages_container">
+            <div class="footer_section">
+                <a class="footer_page_bold" href="about.html">ABOUT</a>
+            </div>
+            <div class="footer_section">
+                <p class="footer_page_bold" href="#">SOLO RELEASES</p>
+                <a class="footer_page" href="thom.html">THOM YORKE</a>
+                <a class="footer_page" href="jonny.html">JONNY GREENWOOD</a>
+                <a class="footer_page" href="colin.html">COLIN GREENWOOD</a>
+                <a class="footer_page" href="ed.html">ED O'BRIEN</a>
+                <a class="footer_page" href="philip.html">PHILIP SELWAY</a>
+            </div>
+            <div class="footer_section">
+                <p class="footer_page_bold" href="#">SIDE PROJECTS</p>
+                <a class="footer_page" href="atomsforpeace.html">ATOMS FOR PEACE</a>
+                <a class="footer_page" href="thesmile.html">THE SMILE</a>
+            </div>
+            <div class="footer_section">
+                <a class="footer_page_bold" href="disc.html">DISCOGRAPHY</a>
+            </div>
+        </div>
+
+        <div id="info_footer">
+            <p>Site created by Ben O'Hara<br>For ITWD5.130 Website Development, EIT Tairāwhiti</p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

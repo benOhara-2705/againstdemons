@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atoms for Peace | Against Demons</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/atomsforpeace.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+
+        <div id="header_text_div">
+            <a id="logo_text_link" href="index.html">
+                <h5 class="logo_text">AGAINST<br>DEMONS</h5>
+            </a>
+        </div>
+
+        <div id="header_logo_div">
+            <a href="index.html">
+                <img class="logo" id="header_logo" src="images/ADLogo.png" alt="Logo (header)">
+            </a>
+        </div>
+
+        <div tabindex="0" role="button" id="header_icon_div" onclick="openNav()"
+            onkeydown="if(event.key==='Enter' || event.key===' ') openNav()">
+            <h5 class="hamburger_icon">≡</h5>
+        </div>
+
+        <div id="header_large_logo">
+            <a href="index.html">
+                <img class="logo" src="images/ADLogoLarge.png" alt="Logo (header)">
+            </a>
+        </div>
+
+        <div id="header_large_container">
+            <a class="header_page" href="about.html">ABOUT</a>
+            <div id="header_solo_dropdown" tabindex="0">
+                <p id="header_solo_dropdown_text" href="#"></p>
+                <div id="header_solo_dropdown_content">
+                    <a class="header_dropdown_page" href="thom.html">THOM YORKE</a>
+                    <a class="header_dropdown_page" href="jonny.html">JONNY GREENWOOD</a>
+                    <a class="header_dropdown_page" href="colin.html">COLIN GREENWOOD</a>
+                    <a class="header_dropdown_page" href="ed.html">ED O'BRIEN</a>
+                    <a class="header_dropdown_page" href="philip.html">PHILIP SELWAY</a>
+                </div>
+            </div>
+            <div id="header_side_dropdown" tabindex="0">
+                <p id="header_side_dropdown_text" href="#"></p>
+                <div id="header_side_dropdown_content">
+                    <a class="header_dropdown_page" href="atomsforpeace.html">ATOMS FOR PEACE</a>
+                    <a class="header_dropdown_page" href="thesmile.html">THE SMILE</a>
+                </div>
+            </div>
+            <a class="header_page" href="disc.html">DISCOGRAPHY</a>
+        </div>
+
+    </header>
+
+    <div id="nav_menu">
+
+        <div class="nav_top_icons">
+            <a href="index.html">
+                <img class="logo" id="nav_logo" src="images/ADLogo.png" alt="Logo (Nav)">
+            </a>
+            <p id="nav_exit_button" tabindex="0" role="button" onclick="closeNav()"
+                onkeydown="if(event.key==='Enter' || event.key===' ') closeNav()">×</p>
+        </div>
+
+        <div id="nav_pages_container">
+            <a class="nav_page" href="about.html">ABOUT</a>
+            <a id="nav_solo_dropdown" onclick="expandSolo()" href="#">SOLO RELEASES ►</a>
+            <div id="nav_solo_dropdown_content">
+                <a class="nav_dropdown_page" href="thom.html">THOM YORKE</a>
+                <a class="nav_dropdown_page" href="jonny.html">JONNY GREENWOOD</a>
+                <a class="nav_dropdown_page" href="colin.html">COLIN GREENWOOD</a>
+                <a class="nav_dropdown_page" href="ed.html">ED O'BRIEN</a>
+                <a class="nav_dropdown_page" href="philip.html">PHILIP SELWAY</a>
+            </div>
+            <a id="nav_side_dropdown" onclick="expandSide()" href="#">SIDE PROJECTS ►</a>
+            <div id="nav_side_dropdown_content">
+                <a class="nav_dropdown_page" href="atomsforpeace.html">ATOMS FOR PEACE</a>
+                <a class="nav_dropdown_page" href="thesmile.html">THE SMILE</a>
+            </div>
+            <a class="nav_page" href="disc.html">DISCOGRAPHY</a>
+        </div>
+
+    </div>
+
+    <main>
+
+        <input id="arrow_button" type="image" src="images/ArrowButton.png" onclick="scrollToTop()" />
+
+        <div id="artist_header_box">
+            <h1 id="artist_header">ATOMS FOR PEACE</h1>
+        </div>
+
+        <section id="artist_details_container">
+
+            <div id="artist_image">
+                <img src="images/atomsforpeace.png" alt="Atoms for Peace">
+            </div>
+            <p id="artist_details" class="side_details"><b>Atoms for Peace</b> was a supergroup consisting of <b><a href="thom.html"
+                        class="detail_links">Thom Yorke</a></b>, <b>Nigel Godrich</b>, <b>Flea</b>
+                (Red Hot Chili Peppers), <b>Joey Waronker</b> (Beck, R.E.M.) & <b>Mauro Refosco</b> (Red Hot Chili Peppers)</p>
+        </section>
+
+
+        <section id="side_solo_header_box">
+            <h2 id="side_solo_header">RELEASES</h2>
+        </section>
+
+        <section id="disc_sections_container">
+
+            <div class="section_items_container">
+                <div class="section_item">
+                    <a class="cover_art_a" href="release.html" release_id="A2">
+                        <img src="https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/8b/b2/fe/8bb2fe98-924c-bc22-9324-1a5059c724ae/634904158361.png/600x600bb.jpg"
+                            class="major_cover_art" alt="Amok">
+                    </a>
+                </div>
+                <div class="minor_cover_container">
+                    <div class="section_item">
+                        <a class="cover_art_a" href="release.html" release_id="A1">
+                            <img src="https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/55/83/7a/55837aa3-696f-6595-feab-edcd2ab3532b/191404102657.png/600x600bb.jpg"
+                                class="minor_cover_art" alt="Default Single">
+                        </a>
+                    </div>
+                    <div class="section_item">
+                        <a class="cover_art_a" href="release.html" release_id="A3">
+                            <img src="https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/43/48/be/4348be55-e9ee-1c6d-dce7-34fbef95859f/191404102558.png/600x600bb.jpg"
+                                class="minor_cover_art" alt="Judge, Jury and Executioner Single">
+                        </a>
+                    </div>
+                    <div class="section_item">
+                        <a class="cover_art_a" href="release.html" release_id="A4">
+                            <img src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/9d/cb/dd/9dcbdd7e-fd60-61d1-35a5-73b68ef4cee8/191404102855.png/600x600bb.jpg"
+                                class="minor_cover_art" alt="Before Your Very Eyes... Single">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+
+        <div id="footer_logo_container">
+            <a id="footer_logo_link" href="/againstDemons/index.html">
+                <img id="footer_logo" src="images/ADLogo.png" alt="Logo (Footer)">
+            </a>
+        </div>
+
+        <div id="footer_pages_container">
+            <div class="footer_section">
+                <a class="footer_page_bold" href="/againstDemons/about.html">ABOUT</a>
+            </div>
+            <div class="footer_section">
+                <p class="footer_page_bold" href="#">SOLO RELEASES</p>
+                <a class="footer_page" href="thom.html">THOM YORKE</a>
+                <a class="footer_page" href="jonny.html">JONNY GREENWOOD</a>
+                <a class="footer_page" href="colin.html">COLIN GREENWOOD</a>
+                <a class="footer_page" href="ed.html">ED O'BRIEN</a>
+                <a class="footer_page" href="philip.html">PHILIP SELWAY</a>
+            </div>
+            <div class="footer_section">
+                <p class="footer_page_bold" href="#">SIDE PROJECTS</p>
+                <a class="footer_page" href="atomsforpeace.html">ATOMS FOR PEACE</a>
+                <a class="footer_page" href="thesmile.html">THE SMILE</a>
+            </div>
+            <div class="footer_section">
+                <a class="footer_page_bold" href="disc.html">DISCOGRAPHY</a>
+            </div>
+        </div>
+
+        <div id="info_footer">
+            <p>Site created by Ben O'Hara<br>For ITWD5.130 Website Development, EIT Tairāwhiti</p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

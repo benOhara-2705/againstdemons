@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonny Greenwood | Against Demons</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jonny.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+
+        <div id="header_text_div">
+            <a id="logo_text_link" href="index.html">
+                <h5 class="logo_text">AGAINST<br>DEMONS</h5>
+            </a>
+        </div>
+
+        <div id="header_logo_div">
+            <a href="index.html">
+                <img class="logo" id="header_logo" src="images/ADLogo.png" alt="Logo (header)">
+            </a>
+        </div>
+
+        <div tabindex="0" role="button" id="header_icon_div" onclick="openNav()"
+            onkeydown="if(event.key==='Enter' || event.key===' ') openNav()">
+            <h5 class="hamburger_icon">≡</h5>
+        </div>
+
+        <div id="header_large_logo">
+            <a href="index.html">
+                <img class="logo" src="images/ADLogoLarge.png" alt="Logo (header)">
+            </a>
+        </div>
+
+        <div id="header_large_container">
+            <a class="header_page" href="about.html">ABOUT</a>
+            <div id="header_solo_dropdown" tabindex="0">
+                <p id="header_solo_dropdown_text" href="#"></p>
+                <div id="header_solo_dropdown_content">
+                    <a class="header_dropdown_page" href="thom.html">THOM YORKE</a>
+                    <a class="header_dropdown_page" href="jonny.html">JONNY GREENWOOD</a>
+                    <a class="header_dropdown_page" href="colin.html">COLIN GREENWOOD</a>
+                    <a class="header_dropdown_page" href="ed.html">ED O'BRIEN</a>
+                    <a class="header_dropdown_page" href="philip.html">PHILIP SELWAY</a>
+                </div>
+            </div>
+            <div id="header_side_dropdown" tabindex="0">
+                <p id="header_side_dropdown_text" href="#"></p>
+                <div id="header_side_dropdown_content">
+                    <a class="header_dropdown_page" href="atomsforpeace.html">ATOMS FOR PEACE</a>
+                    <a class="header_dropdown_page" href="thesmile.html">THE SMILE</a>
+                </div>
+            </div>
+            <a class="header_page" href="disc.html">DISCOGRAPHY</a>
+        </div>
+
+    </header>
+
+    <div id="nav_menu">
+
+        <div class="nav_top_icons">
+            <a href="index.html">
+                <img class="logo" id="nav_logo" src="images/ADLogo.png" alt="Logo (Nav)">
+            </a>
+            <p id="nav_exit_button" tabindex="0" role="button" onclick="closeNav()"
+                onkeydown="if(event.key==='Enter' || event.key===' ') closeNav()">×</p>
+        </div>
+
+        <div id="nav_pages_container">
+            <a class="nav_page" href="about.html">ABOUT</a>
+            <a id="nav_solo_dropdown" onclick="expandSolo()" href="#">SOLO RELEASES ►</a>
+            <div id="nav_solo_dropdown_content">
+                <a class="nav_dropdown_page" href="thom.html">THOM YORKE</a>
+                <a class="nav_dropdown_page" href="jonny.html">JONNY GREENWOOD</a>
+                <a class="nav_dropdown_page" href="colin.html">COLIN GREENWOOD</a>
+                <a class="nav_dropdown_page" href="ed.html">ED O'BRIEN</a>
+                <a class="nav_dropdown_page" href="philip.html">PHILIP SELWAY</a>
+            </div>
+            <a id="nav_side_dropdown" onclick="expandSide()" href="#">SIDE PROJECTS ►</a>
+            <div id="nav_side_dropdown_content">
+                <a class="nav_dropdown_page" href="atomsforpeace.html">ATOMS FOR PEACE</a>
+                <a class="nav_dropdown_page" href="thesmile.html">THE SMILE</a>
+            </div>
+            <a class="nav_page" href="disc.html">DISCOGRAPHY</a>
+        </div>
+
+    </div>
+
+    <main>
+
+        <input id="arrow_button" type="image" src="images/ArrowButton.png" onclick="scrollToTop()" />
+
+        <div id="artist_header_box">
+            <h1 id="artist_header">JONNY GREENWOOD</h1>
+        </div>
+
+        <section id="artist_details_container">
+
+            <section id="artist_image_and_nav">
+
+                <div id="artist_image">
+                    <img src="images/jonnysolo.png" alt="Jonny Greenwood">
+                </div>
+
+                <div id="solo_nav_buttons">
+                    <a class="solo_nav_links" href="thom.html">
+                        <img class="solo_artist_button" src="images/TY Button.png" alt="TY">
+                    </a>
+                    <div id="selected_artist_button">
+                        <img class="solo_artist_button" src="images/JG Button Selected.png" alt="JG">
+                    </div>
+                    <a class="solo_nav_links" href="colin.html">
+                        <img class="solo_artist_button" src="images/CG Button.png" alt="CG">
+                    </a>
+                    <a class="solo_nav_links" href="ed.html">
+                        <img class="solo_artist_button" src="images/EOB Button.png" alt="EOB">
+                    </a>
+                    <a class="solo_nav_links" href="philip.html">
+                        <img class="solo_artist_button" src="images/PS Button.png" alt="PS">
+                    </a>
+                </div>
+
+            </section>
+            <p id="artist_details"><b>Jonny Greenwood</b> is the lead guitarist of Radiohead. He has contributed to the side
+                project <b><a href="thesmile.html" class="detail_links">The Smile</a></b>, collaborated with multiple
+                artists and scored soundtracks for multiple films, especially those from <b><a
+                        href="https://en.wikipedia.org/wiki/Paul_Thomas_Anderson" class="detail_links">Paul Thomas
+                        Anderson</a></b></p>
+        </section>
+
+
+        <section id="side_solo_header_box">
+            <h2 id="side_solo_header">SOLO RELEASES</h2>
+        </section>
+
+        <div id="filter_buttons_container">
+            <button class="solo_side_filter_button" id="date_filter_button" onclick="changeReleaseOrder()">NEWEST FIRST
+                ▼</button>
+        </div>
+
+        <section id="disc_sections_container">
+
+            <div class="section_items_container">
+
+                <div class="section_item">
+                    <a class="cover_art_a" href="release.html" release_id="J12">
+                        <img src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/20/94/9e/20949ebf-3142-da9b-62cc-c89c6fd9dbbe/075597894370.jpg/600x600bb.jpg"
+                            class="major_cover_art" alt="One Battle After Another">
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="section_items_container">
+
+                <div class="section_item">
+                    <a class="cover_art_a" href="release.html" release_id="J11">
+                        <img src="https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/3c/71/90/3c719039-a9d0-065d-a8dd-9a006d63efc3/4050538883749.jpg/600x600bb.jpg"
+                            class="major_cover_art" alt="Jarak Qaribak">
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="section_items_container">
+
+                <div class="section_item">
+                    <a class="cover_art_a" href="release.html" release_id="J10">
+                        <img src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b1/9a/0b/b19a0bf2-6150-57ec-5e91-355780d34d58/51122.jpg/600x600bb.jpg"
+                            class="major_cover_art" alt="The Power of the Dog">
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="section_items_container">
+
+                <div class="section_item">
+                    <a class="cover_art_a" href="release.html" release_id="J9">
+                        <img src="https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/4b/92/34/4b923426-c40a-f0fd-c577-178b3b6bd715/21UM1IM18610.rgb.jpg/600x600bb.jpg"
+                            class="major_cover_art" alt="Spencer">
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="section_items_container">
+
+                <div class="section_item">
+                    <a class="cover_art_a" href="release.html" release_id="J8">
+                        <img src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/7b/a5/33/7ba53375-cbb3-1987-8639-8bf23c73785d/51100.jpg/600x600bb.jpg"
+                            class="major_cover_art" alt="You Were Never Really Here">
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="section_items_container">
+
+                <div class="section_item">
+                    <a class="cover_art_a" href="release.html" release_id="J7">
+                        <img src="https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/b0/df/eb/b0dfebba-fbc8-6d1d-187f-d325215861f4/075597933376.jpg/600x600bb.jpg"
+                            class="major_cover_art" alt="Phantom Thread">
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="section_items_container">
+
+                <div class="section_item">
+                    <a class="cover_art_a" href="release.html" release_id="J6">
+                        <img src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f6/ae/76/f6ae76d4-68b2-f51b-92e1-43a10f3edb24/0075597948455.jpg/600x600bb.jpg"
+                            class="major_cover_art" alt="Junun">
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="section_items_container">
+
+                <div class="section_item">
+                    <a class="cover_art_a" href="release.html" release_id="J5">
+                        <img src="https://is1-ssl.mzstatic.com/image/thumb/Music3/v4/c4/6b/fb/c46bfbef-6c76-f524-c6c5-b88c8a7a05ab/075597952438.jpg/600x600bb.jpg"
+                            class="major_cover_art" alt="Inherent Vice">
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="section_items_container">
+
+                <div class="section_item">
+                    <a class="cover_art_a" href="release.html" release_id="J4">
+                        <img src="https://is1-ssl.mzstatic.com/image/thumb/Music/v4/57/f0/4c/57f04cb2-d4e3-f301-a745-ed7cb1d27eea/075597960853.jpg/600x600bb.jpg"
+                            class="major_cover_art" alt="The Master">
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="section_items_container">
+
+                <div class="section_item">
+                    <a class="cover_art_a" href="release.html" release_id="J3">
+                        <img src="https://is1-ssl.mzstatic.com/image/thumb/Music/b1/c0/eb/mzi.rnnsejyz.jpg/600x600bb.jpg"
+                            class="major_cover_art" alt="Norwegian Wood">
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="section_items_container">
+
+                <div class="section_item">
+                    <a class="cover_art_a" href="release.html" release_id="J2">
+                        <img src="https://is1-ssl.mzstatic.com/image/thumb/Music/b4/f7/e5/mzi.whyfjprx.jpg/600x526bb.jpg"
+                            class="major_cover_art" alt="There Will Be Blood">
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="section_items_container">
+
+                <div class="section_item">
+                    <a class="cover_art_a" href="release.html" release_id="J1">
+                        <img src="https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/f1/72/aa/f172aa49-6fd9-65b9-966a-be524a4dea92/634904078959.png/600x600bb.jpg"
+                            class="major_cover_art" alt="Bodysong">
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+    <footer>
+
+        <div id="footer_logo_container">
+            <a id="footer_logo_link" href="index.html">
+                <img id="footer_logo" src="images/ADLogo.png" alt="Logo (Footer)">
+            </a>
+        </div>
+
+        <div id="footer_pages_container">
+            <div class="footer_section">
+                <a class="footer_page_bold" href="about.html">ABOUT</a>
+            </div>
+            <div class="footer_section">
+                <p class="footer_page_bold" href="#">SOLO RELEASES</p>
+                <a class="footer_page" href="thom.html">THOM YORKE</a>
+                <a class="footer_page" href="jonny.html">JONNY GREENWOOD</a>
+                <a class="footer_page" href="colin.html">COLIN GREENWOOD</a>
+                <a class="footer_page" href="ed.html">ED O'BRIEN</a>
+                <a class="footer_page" href="philip.html">PHILIP SELWAY</a>
+            </div>
+            <div class="footer_section">
+                <p class="footer_page_bold" href="#">SIDE PROJECTS</p>
+                <a class="footer_page" href="atomsforpeace.html">ATOMS FOR PEACE</a>
+                <a class="footer_page" href="thesmile.html">THE SMILE</a>
+            </div>
+            <div class="footer_section">
+                <a class="footer_page_bold" href="disc.html">DISCOGRAPHY</a>
+            </div>
+        </div>
+
+        <div id="info_footer">
+            <p>Site created by Ben O'Hara<br>For ITWD5.130 Website Development, EIT Tairāwhiti</p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

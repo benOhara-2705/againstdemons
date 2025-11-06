@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage | Against Demons</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+
+        <div id="header_text_div">
+            <a id="logo_text_link" href="index.html">
+                <h5 class="logo_text">AGAINST<br>DEMONS</h5>
+            </a>
+        </div>
+
+        <div id="header_logo_div">
+            <a href="index.html">
+                <img class="logo" id="header_logo" src="images/ADLogo.png" alt="Logo (header)">
+            </a>
+        </div>
+
+        <div tabindex="0" role="button" id="header_icon_div" onclick="openNav()" onkeydown="if(event.key==='Enter' || event.key===' ') openNav()">
+            <h5 class="hamburger_icon">≡</h5>
+        </div>
+
+        <div id="header_large_logo">
+            <a href="index.html">
+                <img class="logo" src="images/ADLogoLarge.png" alt="Logo (header)">
+            </a>
+        </div>
+
+        <div id="header_large_container">
+            <a class="header_page" href="about.html">ABOUT</a>
+            <div id="header_solo_dropdown" tabindex="0">
+                <p id="header_solo_dropdown_text" href="#"></p>
+                <div id="header_solo_dropdown_content">
+                    <a class="header_dropdown_page" href="thom.html">THOM YORKE</a>
+                    <a class="header_dropdown_page" href="jonny.html">JONNY GREENWOOD</a>
+                    <a class="header_dropdown_page" href="colin.html">COLIN GREENWOOD</a>
+                    <a class="header_dropdown_page" href="ed.html">ED O'BRIEN</a>
+                    <a class="header_dropdown_page" href="philip.html">PHILIP SELWAY</a>
+                </div>
+            </div>
+            <div id="header_side_dropdown" tabindex="0">
+                <p id="header_side_dropdown_text" href="#"></p>
+                <div id="header_side_dropdown_content">
+                    <a class="header_dropdown_page" href="atomsforpeace.html">ATOMS FOR PEACE</a>
+                    <a class="header_dropdown_page" href="thesmile.html">THE SMILE</a>
+                </div>
+            </div>
+            <a class="header_page" href="disc.html">DISCOGRAPHY</a>
+        </div>
+
+    </header>
+
+    <div id="nav_menu">
+
+        <div class="nav_top_icons">
+            <a href="index.html">
+                <img class="logo" id="nav_logo" src="images/ADLogo.png" alt="Logo (Nav)">
+            </a>
+            <p id="nav_exit_button" tabindex="0" role="button" onclick="closeNav()" onkeydown="if(event.key==='Enter' || event.key===' ') closeNav()">×</p>
+        </div>
+
+        <div id="nav_pages_container">
+            <a class="nav_page" href="about.html">ABOUT</a>
+            <a id="nav_solo_dropdown" onclick="expandSolo()" href="#">SOLO RELEASES ►</a>
+            <div id="nav_solo_dropdown_content">
+                <a class="nav_dropdown_page" href="thom.html">THOM YORKE</a>
+                <a class="nav_dropdown_page" href="jonny.html">JONNY GREENWOOD</a>
+                <a class="nav_dropdown_page" href="colin.html">COLIN GREENWOOD</a>
+                <a class="nav_dropdown_page" href="ed.html">ED O'BRIEN</a>
+                <a class="nav_dropdown_page" href="philip.html">PHILIP SELWAY</a>
+            </div>
+            <a id="nav_side_dropdown" onclick="expandSide()" href="#">SIDE PROJECTS ►</a>
+            <div id="nav_side_dropdown_content">
+                <a class="nav_dropdown_page" href="atomsforpeace.html">ATOMS FOR PEACE</a>
+                <a class="nav_dropdown_page" href="thesmile.html">THE SMILE</a>
+            </div>
+            <a class="disc.html">DISCOGRAPHY</a>
+        </div>
+
+    </div>
+
+    <main>
+
+        <input id="arrow_button" type="image" src="images/ArrowButton.png" onclick="scrollToTop()" />
+
+        <section id="front_section">
+
+            <section id="front_text_box">
+                <h1 id="front_text">FOR ALL MUSIC UNDER<br>THE RADIOHEAD UMBRELLA</h1>
+            </section>
+
+            <section id="top_buttons">
+                <button onclick="document.location = 'about.html'" id='about_button'>ABOUT THIS SITE</button>
+                <button onclick="scrollSoloReleases()" id="solo_button">SOLO RELEASES</button>
+                <button onclick="document.location = 'disc.html'" id="disc_button">DISCOGRAPHY</button>
+                <button onclick="scrollSideProjects()" id="side_button">SIDE PROJECTS</button>
+            </section>
+
+        </section>
+
+        <section id="members_section">
+            <h2 class="members_text">MEMBERS</h2>
+
+            <section id="member_container">
+
+                <section class="member" id="thom">
+                    <a href="thom.html">
+                        <img class="member_image" src="images/Thom.png" alt="Thom">
+                        <h3>THOM<br>YORKE</h3>
+                    </a>
+                </section>
+
+                <section class="member" id="jonny">
+                    <a href="jonny.html">
+                        <img class="member_image" src="images/Jonny.png" alt="Jonny">
+                        <h3>JONNY<br>GREENWOOD</h3>
+                    </a>
+                </section>
+
+                <section class="member" id="colin">
+                    <a href="colin.html">
+                        <img class="member_image" src="images/Colin.png" alt="Colin">
+                        <h3>COLIN<br>GREENWOOD</h3>
+                    </a>
+                </section>
+
+                <section class="member" id="ed">
+                    <a href="ed.html">
+                        <img class="member_image" src="images/Ed.png" alt="Ed">
+                        <h3>ED<br>O'BRIEN</h3>
+                    </a>
+                </section>
+
+                <section class="member" id="philip">
+                    <a href="philip.html">
+                        <img class="member_image" src="images/Philip.png" alt="Philip">
+                        <h3>PHILIP<br>SELWAY</h3>
+                    </a>
+                </section>
+
+            </section>
+
+        </section>
+
+        <section id="side_projects_section">
+            <h2 id="side_projects_text">SIDE PROJECTS</h2>
+
+            <section id="side_projects_container">
+
+                <section class="side_project" id="atoms_for_peace">
+                    <a href="atomsforpeace.html">
+                        <img class="side_projects_image"
+                            src="https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/8b/b2/fe/8bb2fe98-924c-bc22-9324-1a5059c724ae/634904158361.png/600x600bb.jpg"
+                            alt="Atoms for Peace">
+                        <h3>ATOMS FOR PEACE</h3>
+                    </a>
+                </section>
+
+                <section class="side_project" id="the_smile">
+                    <a href="thesmile.html">
+                        <img class="side_projects_image"
+                            src="https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/5e/f4/e5/5ef4e525-68b6-0ac2-3bcc-a2670ab21bb7/191404119655.png/600x600bb.jpg"
+                            alt="The Smile">
+                        <h3>THE SMILE</h3>
+                    </a>
+                </section>
+
+            </section>
+
+        </section>
+
+    </main>
+    <footer>
+
+        <div id="footer_logo_container">
+            <a id="footer_logo_link" href="index.html">
+                <img id="footer_logo" src="images/ADLogo.png" alt="Logo (Footer)">
+            </a>
+        </div>
+
+        <div id="footer_pages_container">
+            <div class="footer_section">
+                <a class="footer_page_bold" href="about.html">ABOUT</a>
+            </div>
+            <div class="footer_section">
+                <p class="footer_page_bold" href="#">SOLO RELEASES</p>
+                <a class="footer_page" href="thom.html">THOM YORKE</a>
+                <a class="footer_page" href="jonny.html">JONNY GREENWOOD</a>
+                <a class="footer_page" href="colin.html">COLIN GREENWOOD</a>
+                <a class="footer_page" href="ed.html">ED O'BRIEN</a>
+                <a class="footer_page" href="philip.html">PHILIP SELWAY</a>
+            </div>
+            <div class="footer_section">
+                <p class="footer_page_bold" href="#">SIDE PROJECTS</p>
+                <a class="footer_page" href="atomsforpeace.html">ATOMS FOR PEACE</a>
+                <a class="footer_page" href="thesmile.html">THE SMILE</a>
+            </div>
+            <div class="footer_section">
+                <a class="footer_page_bold" href="disc.html">DISCOGRAPHY</a>
+            </div>
+        </div>
+
+        <div id="info_footer">
+            <p>Site created by Ben O'Hara<br>For ITWD5.130 Website Development, EIT Tairāwhiti</p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
