@@ -1246,6 +1246,7 @@ button {
         width: 90%;
         margin: 40px auto;
         gap: 2.5rem;
+        align-items: flex-start;
     }
 
     .release_track_title {
@@ -1311,5 +1312,6 @@ button {
         width: 112px;
     }
 }
+
 
 
