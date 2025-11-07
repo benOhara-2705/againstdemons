@@ -157,7 +157,8 @@ header h5 {
 
 .nav_page,
 #nav_solo_dropdown,
-#nav_side_dropdown {
+#nav_side_dropdown,
+.nav_dropdown_page {
     width: 100%;
     padding: 0;
     margin: 20px 0px;
@@ -1312,6 +1313,7 @@ button {
         width: 112px;
     }
 }
+
 
 
 
