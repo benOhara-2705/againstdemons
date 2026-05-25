@@ -5212,8 +5212,8 @@ let Releases = {
         releaseYear: 2020, 
         previousReleaseID: "E1", 
         previousReleaseTitle: "Santa Teresa",
-        nextReleaseID: "NA", 
-        nextReleaseTitle: "",
+        nextReleaseID: "E3", 
+        nextReleaseTitle: "Blue Morpho",
         releaseSection: "other_release",
         releaseSectionText: "other_release_text",
         tracks: [
@@ -5277,6 +5277,70 @@ let Releases = {
                 number: 9,
                 title: "Cloak of the Night",
                 trackAudio: 'https://youtu.be/W5xCSPuqjr8?si=0BJQiHDtKELIyVky',
+                videoAvailable: false,
+                trackVideo: ''
+            }
+        ]
+    },
+    "E3": {
+        title: "Blue Morpho", 
+        imageID: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/0d/5b/1a/0d5b1a3e-8957-eef7-189f-f2a6efa76b34/8721465678116.png/600x600bb.jpg",
+        artist: "Ed O'Brien", 
+        releaseType: "LP", 
+        releaseYear: 2026, 
+        previousReleaseID: "E2", 
+        previousReleaseTitle: "Earth",
+        nextReleaseID: "NA", 
+        nextReleaseTitle: "",
+        releaseSection: "other_release",
+        releaseSectionText: "other_release_text",
+        tracks: [
+            {
+                number: 1,
+                title: "Incantations",
+                trackAudio: 'https://youtu.be/fJ0xBf_bCU4?si=OC_DQT3UdAJbWtpj',
+                videoAvailable: false,
+                trackVideo: ''
+            },
+            {
+                number: 2,
+                title: "Blue Morpho",
+                trackAudio: 'https://youtu.be/D2Q2NXVncJI?si=NmGCig4xsue29GvB',
+                videoAvailable: false,
+                trackVideo: ''
+            },
+            {
+                number: 3,
+                title: "Sweet Spot",
+                trackAudio: 'https://youtu.be/IKBOBuKuz1o?si=lM5_HyOb_fJLSvdI',
+                videoAvailable: false,
+                trackVideo: ''
+            },
+            {
+                number: 4,
+                title: "Teachers",
+                trackAudio: 'https://youtu.be/Ahr5HUMljk8?si=fmRFHW1FXjvVVPIP',
+                videoAvailable: false,
+                trackVideo: ''
+            },
+            {
+                number: 5,
+                title: "Solfeggio",
+                trackAudio: 'https://youtu.be/HLCjEFkV0sU?si=5EMwWcPJZZ0oRg0M',
+                videoAvailable: false,
+                trackVideo: ''
+            },
+            {
+                number: 6,
+                title: "Thin Places",
+                trackAudio: 'https://youtu.be/ZFN0p9fYKHQ?si=_PycDBj96zQ1woUB',
+                videoAvailable: false,
+                trackVideo: ''
+            },
+            {
+                number: 7,
+                title: "Obrigado",
+                trackAudio: 'https://youtu.be/qyO2milFX6g?si=Wil1xQCcM06c8FXv',
                 videoAvailable: false,
                 trackVideo: ''
             }
