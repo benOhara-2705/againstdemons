@@ -3648,7 +3648,7 @@ let Releases = {
         previousReleaseID: "T13", 
         previousReleaseTitle: "5.17 / That's How Horses Are",
         nextReleaseID: "T15", 
-        nextReleaseTitle: "Tall Tales",
+        nextReleaseTitle: "Live from Electric Lady Studios",
         releaseSection: "other_release",
         releaseSectionText: "other_release_text",
         tracks: [
@@ -3738,14 +3738,57 @@ let Releases = {
             }
         ]
     },
-    "T15": {
+        "T15": {
+        title: "Live from Electric Lady Studios", 
+        imageID: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d2/b4/55/d2b455d4-74b3-5692-1011-bc61e938d0de/191404097892.png/600x600bb.jpg",
+        artist: "Thom Yorke", 
+        releaseType: "EP", 
+        releaseYear: 2024, 
+        previousReleaseID: "T14", 
+        previousReleaseTitle: "Confidenza",
+        nextReleaseID: "T16", 
+        nextReleaseTitle: "Tall Tales",
+        releaseSection: "other_release",
+        releaseSectionText: "other_release_text",
+        tracks: [
+            {
+                number: 1,
+                title: 'Open Again (Live from Electric Lady Studios)',
+                trackAudio: 'https://youtu.be/lvY9LzozNfw',
+                videoAvailable: true,
+                trackVideo: 'https://youtu.be/hJ9ljQXIrY4'
+            },
+            {
+                number: 2,
+                title: 'Bloom (Live from Electric Lady Studios)',
+                trackAudio: 'https://youtu.be/0RMsENDIAN0',
+                videoAvailable: true,
+                trackVideo: 'https://youtu.be/EdmL835q9To'
+            },
+            {
+                number: 3,
+                title: 'Susperium (Live from Electric Lady Studios)',
+                trackAudio: 'https://youtu.be/i_HhX0ICkVQ',
+                videoAvailable: true,
+                trackVideo: 'https://youtu.be/C8RllKVvfR4'
+            },
+            {
+                number: 4,
+                title: 'Unmade (Live from Electric Lady Studios)',
+                trackAudio: 'https://youtu.be/oRF0VTqTqkA',
+                videoAvailable: true,
+                trackVideo: 'https://youtu.be/TxHgmAFkNyI'
+            }
+        ]
+    },
+    "T16": {
         title: "Tall Tales", 
         imageID: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/94/80/08/9480085e-5b93-224c-0cb5-b9e09dc32290/5056818800856.png/600x600bb.jpg",
         artist: "Thom Yorke & Mark Pritchard", 
         releaseType: "LP", 
         releaseYear: 2025, 
         previousReleaseID: "T14", 
-        previousReleaseTitle: "Confidenza",
+        previousReleaseTitle: "Live from Electric Lady Studios",
         nextReleaseID: "T16", 
         nextReleaseTitle: "Dialing In",
         releaseSection: "other_release",
@@ -3837,7 +3880,7 @@ let Releases = {
             }
         ]
     },
-    "T16": {
+    "T17": {
         title: "Dialing In", 
         imageID: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ac/43/97/ac4397d9-24be-4237-46b6-87aad72d8ef5/5059449219868.png/600x599bb.jpg",
         artist: "Thom Yorke", 
@@ -4185,7 +4228,7 @@ let Releases = {
             },
             {
                 number: 4,
-                title: "Get Thee Behind Me Satan (feat. Ella Fizgerald)",
+                title: "Get Thee Behind Me Satan (feat. Ella Fitzgerald)",
                 trackAudio: 'https://youtu.be/oUMNP3Qxxng?si=DoyfOV-zwIK4Tbo2',
                 videoAvailable: false,
                 trackVideo: ''
